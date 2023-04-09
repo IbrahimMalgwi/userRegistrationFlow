@@ -18,8 +18,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private VerificationTokenRepository verificationTokenRepository;
 
-    @Autowired
+
     private PasswordEncoder passwordEncoder;
+
 
     @Override
     public User registerUser(UserModel userModel) {
@@ -39,6 +40,5 @@ public class UserServiceImpl implements UserService {
         VerificationToken verificationToken = new VerificationToken(user, token);
 
         verificationTokenRepository.save(verificationToken);
-
     }
 }
