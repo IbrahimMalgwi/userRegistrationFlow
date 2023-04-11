@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     private VerificationTokenRepository verificationTokenRepository;
 
 
-    private PasswordEncoder passwordEncoder;
+    private PasswordEncoder  passwordEncoder;
 
 
     @Override
